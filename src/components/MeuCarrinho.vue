@@ -1,4 +1,8 @@
 <script setup>
+import CartOff from 'vue-material-design-icons/CartOff.vue'
+import CheckUnderline from 'vue-material-design-icons/CheckUnderline.vue'
+import ContentSave from 'vue-material-design-icons/ContentSave.vue'
+
 import { carrinho, removerItemCarrinho, atualizaQuantidadeItem } from '@/_data/carrinho.js'
 import MButton from './MButton.vue'
 import CarrinhoVazio from './CarrinhoVazio.vue'
@@ -41,10 +45,11 @@ function formatarPreco(preco) {
           </div>
         </div>
       </div>
-      <m-button text="Limpar carrinho" />
-      <m-button text="Finalizar compra" />
-      <m-button text="Continuar comprando" />
-      <m-button text="Salvar" />
+      <m-button> <cart-off /> </m-button>
+      <m-button class="sucesso"> <check-underline/> </m-button>
+      <m-button> <content-save/> </m-button>
+      
+      
       <p class="carrinho-total">Total: {{ formatarPreco(carrinho.total) }}</p>
     </div>
   </div>
@@ -105,5 +110,8 @@ function formatarPreco(preco) {
 
 .carrinho {
   /* min-width: 20%; */
+}
+.sucesso:hover {
+  background-color: #218838;
 }
 </style>

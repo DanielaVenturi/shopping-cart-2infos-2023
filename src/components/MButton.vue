@@ -5,7 +5,11 @@ const props = defineProps({
 </script>
 
 <template>
-  <button>{{ props.text }}</button>
+  <button>
+    <slot>
+      {{ props.text }}
+    </slot>
+  </button>
 </template>
 
 <style scoped>
@@ -23,4 +27,5 @@ button {
 button:hover {
   background-color: darkblue;
 }
+
 </style>
