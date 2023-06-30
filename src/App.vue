@@ -4,16 +4,19 @@ import MeuCarrinho from '@/components/MeuCarrinho.vue'
 </script>
 
 <template>
-  <h1>Minha livraria</h1>
+  <main>
+  
   <div class="container-geral">
     <listagem-livros />
     <meu-carrinho />
   </div>
+</main>
 </template>
 
 <style scoped>
 .container-geral {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  
 }
 </style>
