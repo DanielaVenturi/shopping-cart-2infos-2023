@@ -30,6 +30,12 @@ function formatarPreco(preco) {
       <m-button @click="emit('adicionarAoCarrinho', props.livro)">
         <cart-check />
       </m-button>
+      <m-button @click="emit('adicionarAoCarrinho', props.livro)">
+        +
+      </m-button>
+      <m-button @click="emit('decrementar', props.livro)">
+        -
+      </m-button>
      
     </div>
   </div>

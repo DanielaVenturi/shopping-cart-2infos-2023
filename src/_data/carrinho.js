@@ -33,4 +33,8 @@ function adicionarAoCarrinho(livro) {
   }
 }
 
+function decrementar(livro){
+ 
+}
+
 export { carrinho, adicionarAoCarrinho, removerItemCarrinho, atualizaQuantidadeItem }
